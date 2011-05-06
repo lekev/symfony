@@ -10,5 +10,6 @@
   </head>
   <body>
     <?php echo $sf_content ?>
+	<p2>test</p2>
   </body>
 </html>
