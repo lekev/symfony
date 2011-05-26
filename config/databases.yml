@@ -5,8 +5,12 @@ dev:
       debug: { realmemoryusage: true, details: { time: { enabled: true }, slow: { enabled: true, threshold: 0.1 }, mem: { enabled: true }, mempeak: { enabled: true }, memdelta: { enabled: true } } }
 test:
   propel:
+    class: sfPropelDatabase
     param:
       classname: DebugPDO
+      dsn: 'mysql:host=localhost;dbname=jobeet_test'
+      username: root
+      password: kr
 all:
   propel:
     class: sfPropelDatabase

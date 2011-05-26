@@ -1,0 +1,28 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           JobeetCategory
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              JobeetCategory
+    plural:                JobeetCategorys
+    route_prefix:          jobeet_category
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+        title: Category Management
+        batch_actions: {}
+        object_actions: {}
+        display: [=name, slug]
+      filter:
+          class: false
+      form:    ~
+      edit:    
+        title: Editing Category "‰‰name‰‰"
+      new:     
+        title: New Category
