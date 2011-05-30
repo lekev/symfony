@@ -18,6 +18,10 @@
  */
 class JobeetCategory extends BaseJobeetCategory {
 
+public function getLatestPost()
+{
+	return $this->getActiveJobs(1)->getFirst();
+}
 
 public function __toString()
 {
@@ -52,6 +56,8 @@ public function getActiveJobsCriteria()
 	
 	return JobeetJobPeer::addActiveJobsCriteria($criteria);
 }
+
+
 
 
 } // JobeetCategory

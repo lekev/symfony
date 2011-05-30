@@ -42,6 +42,13 @@ static function cleanup($days)
 	return self::doDelete($criteria);
 }
 
+static public function getLatestPost()
+{
+	$criteria = new Criteria();
+	self::addActiveJobsCriteria($criteria);
+	return jobeetJobPeer::doSelectOne($criteria);
+}
+
 static public function addActiveJobsCriteria(Criteria $criteria = null)
 {
 	if (is_null($criteria))

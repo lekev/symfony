@@ -53,7 +53,7 @@ class JobeetJob extends BaseJobeetJob {
 	
 	public function extend($force = false)
 	{
-		if (!$force && !$this->expiresSoon())
+		if (!$force && !$this->expireSoon())
 		{
 			return false;
 		}

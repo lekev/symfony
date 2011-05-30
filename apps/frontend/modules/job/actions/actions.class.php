@@ -11,7 +11,6 @@ class jobActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-   
  	$this->categories = JobeetCategoryPeer::getWithJobs();
   }
 
@@ -21,6 +20,7 @@ class jobActions extends sfActions
 
 	$this->getUser()->addJobToHistory($this->job);
   }
+
 
  public function executePublish(sfWebRequest $request)
 {

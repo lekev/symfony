@@ -28,5 +28,9 @@ class JobeetCategoryPeer extends BaseJobeetCategoryPeer {
 		
 		return self::doSelect($criteria);
 	}
+	
+
+	
+	
 
 } // JobeetCategoryPeer

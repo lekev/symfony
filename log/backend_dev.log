@@ -9757,3 +9757,25 @@ May 26 17:16:39 symfony [info] {sfWebDebugLogger} Partial "job/_list_batch_actio
 May 26 17:16:39 symfony [info] {sfWebDebugLogger} Partial "job/_list_actions" 1.43 ms (1)
 May 26 17:16:39 symfony [info] {sfWebDebugLogger} Partial "job/_list_footer" 0.64 ms (1)
 May 26 17:16:39 symfony [info] {sfWebResponse} Send content (238559 o)
+May 26 17:56:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/login)
+May 26 17:56:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/logout)
+May 26 17:56:59 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_password" (/request_password)
+May 26 17:56:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+May 26 17:56:59 symfony [info] {myUser} Automatic user logout due to timeout
+May 26 17:56:59 symfony [info] {myUser} User is not authenticated
+May 26 17:56:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 17:56:59 symfony [info] {sfFilterChain} Executing filter "sfBasicSecurityFilter"
+May 26 17:56:59 symfony [info] {sfBasicSecurityFilter} Action "job/index" requires authentication, forwarding to "sfGuardAuth/signin"
+May 26 17:56:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+May 26 17:56:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+May 26 17:56:59 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+May 26 17:56:59 symfony [info] {sfPHPView} Render "/Users/kevin/Documents/dev/symfony/jobeet/plugins/sfGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+May 26 17:56:59 symfony [info] {sfPHPView} Decorate content with "/Users/kevin/Documents/dev/symfony/jobeet/apps/backend/templates/layout.php"
+May 26 17:56:59 symfony [info] {sfPHPView} Render "/Users/kevin/Documents/dev/symfony/jobeet/apps/backend/templates/layout.php"
+May 26 17:56:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 401 Unauthorized"
+May 26 17:56:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+May 26 17:56:59 symfony [info] {sfWebDebugLogger} Configuration 2.66 ms (14)
+May 26 17:56:59 symfony [info] {sfWebDebugLogger} Factories 67.27 ms (1)
+May 26 17:56:59 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 7.05 ms (1)
+May 26 17:56:59 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 12.47 ms (1)
+May 26 17:56:59 symfony [info] {sfWebResponse} Send content (37920 o)

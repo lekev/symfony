@@ -1,0 +1,109 @@
+[27-May-2011 15:45:43] PHP Catchable fatal error:  Argument 3 passed to sfObjectRoute::__construct() must be an array, string given in /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/routing/sfObjectRoute.class.php on line 37
+[27-May-2011 15:45:43] PHP Stack trace:
+[27-May-2011 15:45:43] PHP   1. {main}() /Users/kevin/Documents/dev/symfony/jobeet/symfony:0
+[27-May-2011 15:45:43] PHP   2. include() /Users/kevin/Documents/dev/symfony/jobeet/symfony:14
+[27-May-2011 15:45:43] PHP   3. sfSymfonyCommandApplication->run() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/cli.php:20
+[27-May-2011 15:45:43] PHP   4. sfTask->runFromCLI() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[27-May-2011 15:45:43] PHP   5. sfBaseTask->doRun() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[27-May-2011 15:45:43] PHP   6. sfAppRoutesTask->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[27-May-2011 15:45:43] PHP   7. sfCommandApplicationTask->getRouting() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/app/sfAppRoutesTask.class.php:50
+[27-May-2011 15:45:43] PHP   8. sfCommandApplicationTask->initializeRouting() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfCommandApplicationTask.class.php:145
+[27-May-2011 15:45:43] PHP   9. sfRoutingConfigHandler->evaluate() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfCommandApplicationTask.class.php:157
+[27-May-2011 15:45:43] PHP  10. ReflectionClass->newInstanceArgs() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfRoutingConfigHandler.class.php:68
+[27-May-2011 15:45:43] PHP  11. sfObjectRoute->__construct() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/routing/sfObjectRoute.class.php:68
+[29-May-2011 22:25:19] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfRootConfigHandler.class.php on line 91
+[29-May-2011 22:25:19] PHP Stack trace:
+[29-May-2011 22:25:19] PHP   1. {main}() /Users/kevin/Documents/dev/symfony/jobeet/symfony:0
+[29-May-2011 22:25:19] PHP   2. include() /Users/kevin/Documents/dev/symfony/jobeet/symfony:14
+[29-May-2011 22:25:19] PHP   3. sfSymfonyCommandApplication->run() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/cli.php:20
+[29-May-2011 22:25:19] PHP   4. sfTask->runFromCLI() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[29-May-2011 22:25:19] PHP   5. sfBaseTask->doRun() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[29-May-2011 22:25:19] PHP   6. sfCacheClearTask->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[29-May-2011 22:25:19] PHP   7. sfProjectConfiguration::getApplicationConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/cache/sfCacheClearTask.class.php:105
+[29-May-2011 22:25:19] PHP   8. sfApplicationConfiguration->__construct() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfProjectConfiguration.class.php:614
+[29-May-2011 22:25:19] PHP   9. sfApplicationConfiguration->initConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:51
+[29-May-2011 22:25:19] PHP  10. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:121
+[29-May-2011 22:25:19] PHP  11. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:25:19] PHP  12. sfConfigCache->loadConfigHandlers() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:54
+[29-May-2011 22:25:19] PHP  13. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:279
+[29-May-2011 22:25:19] PHP  14. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:25:19] PHP  15. sfRootConfigHandler->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:108
+[29-May-2011 22:25:19] PHP  16. date() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfRootConfigHandler.class.php:91
+[29-May-2011 22:25:19] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php on line 66
+[29-May-2011 22:25:19] PHP Stack trace:
+[29-May-2011 22:25:19] PHP   1. {main}() /Users/kevin/Documents/dev/symfony/jobeet/symfony:0
+[29-May-2011 22:25:19] PHP   2. include() /Users/kevin/Documents/dev/symfony/jobeet/symfony:14
+[29-May-2011 22:25:19] PHP   3. sfSymfonyCommandApplication->run() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/cli.php:20
+[29-May-2011 22:25:19] PHP   4. sfTask->runFromCLI() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[29-May-2011 22:25:19] PHP   5. sfBaseTask->doRun() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[29-May-2011 22:25:19] PHP   6. sfCacheClearTask->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[29-May-2011 22:25:19] PHP   7. sfProjectConfiguration::getApplicationConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/cache/sfCacheClearTask.class.php:105
+[29-May-2011 22:25:19] PHP   8. sfApplicationConfiguration->__construct() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfProjectConfiguration.class.php:614
+[29-May-2011 22:25:19] PHP   9. sfApplicationConfiguration->initConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:51
+[29-May-2011 22:25:19] PHP  10. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:121
+[29-May-2011 22:25:19] PHP  11. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:25:19] PHP  12. sfDefineEnvironmentConfigHandler->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:108
+[29-May-2011 22:25:19] PHP  13. date() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php:66
+[29-May-2011 22:25:19] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php on line 66
+[29-May-2011 22:25:19] PHP Stack trace:
+[29-May-2011 22:25:19] PHP   1. {main}() /Users/kevin/Documents/dev/symfony/jobeet/symfony:0
+[29-May-2011 22:25:19] PHP   2. include() /Users/kevin/Documents/dev/symfony/jobeet/symfony:14
+[29-May-2011 22:25:19] PHP   3. sfSymfonyCommandApplication->run() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/cli.php:20
+[29-May-2011 22:25:19] PHP   4. sfTask->runFromCLI() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[29-May-2011 22:25:19] PHP   5. sfBaseTask->doRun() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[29-May-2011 22:25:19] PHP   6. sfCacheClearTask->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:68
+[29-May-2011 22:25:19] PHP   7. sfProjectConfiguration::getApplicationConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/cache/sfCacheClearTask.class.php:105
+[29-May-2011 22:25:19] PHP   8. sfApplicationConfiguration->__construct() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfProjectConfiguration.class.php:614
+[29-May-2011 22:25:19] PHP   9. sfApplicationConfiguration->initConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:51
+[29-May-2011 22:25:19] PHP  10. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:122
+[29-May-2011 22:25:19] PHP  11. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:25:19] PHP  12. sfDefineEnvironmentConfigHandler->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:108
+[29-May-2011 22:25:19] PHP  13. date() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php:66
+[29-May-2011 22:39:52] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfRootConfigHandler.class.php on line 91
+[29-May-2011 22:39:52] PHP Stack trace:
+[29-May-2011 22:39:52] PHP   1. {main}() /Users/kevin/Documents/dev/symfony/jobeet/symfony:0
+[29-May-2011 22:39:52] PHP   2. include() /Users/kevin/Documents/dev/symfony/jobeet/symfony:14
+[29-May-2011 22:39:52] PHP   3. sfSymfonyCommandApplication->run() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/cli.php:20
+[29-May-2011 22:39:52] PHP   4. sfTask->runFromCLI() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[29-May-2011 22:39:52] PHP   5. sfBaseTask->doRun() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[29-May-2011 22:39:52] PHP   6. sfBaseTask->createConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:60
+[29-May-2011 22:39:52] PHP   7. sfProjectConfiguration::getApplicationConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:167
+[29-May-2011 22:39:52] PHP   8. sfApplicationConfiguration->__construct() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfProjectConfiguration.class.php:614
+[29-May-2011 22:39:52] PHP   9. sfApplicationConfiguration->initConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:51
+[29-May-2011 22:39:52] PHP  10. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:121
+[29-May-2011 22:39:52] PHP  11. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:39:52] PHP  12. sfConfigCache->loadConfigHandlers() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:54
+[29-May-2011 22:39:52] PHP  13. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:279
+[29-May-2011 22:39:52] PHP  14. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:39:52] PHP  15. sfRootConfigHandler->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:108
+[29-May-2011 22:39:52] PHP  16. date() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfRootConfigHandler.class.php:91
+[29-May-2011 22:39:53] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php on line 66
+[29-May-2011 22:39:53] PHP Stack trace:
+[29-May-2011 22:39:53] PHP   1. {main}() /Users/kevin/Documents/dev/symfony/jobeet/symfony:0
+[29-May-2011 22:39:53] PHP   2. include() /Users/kevin/Documents/dev/symfony/jobeet/symfony:14
+[29-May-2011 22:39:53] PHP   3. sfSymfonyCommandApplication->run() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/cli.php:20
+[29-May-2011 22:39:53] PHP   4. sfTask->runFromCLI() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[29-May-2011 22:39:53] PHP   5. sfBaseTask->doRun() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[29-May-2011 22:39:53] PHP   6. sfBaseTask->createConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:60
+[29-May-2011 22:39:53] PHP   7. sfProjectConfiguration::getApplicationConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:167
+[29-May-2011 22:39:53] PHP   8. sfApplicationConfiguration->__construct() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfProjectConfiguration.class.php:614
+[29-May-2011 22:39:53] PHP   9. sfApplicationConfiguration->initConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:51
+[29-May-2011 22:39:53] PHP  10. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:121
+[29-May-2011 22:39:53] PHP  11. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:39:53] PHP  12. sfDefineEnvironmentConfigHandler->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:108
+[29-May-2011 22:39:53] PHP  13. date() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php:66
+[29-May-2011 22:39:53] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php on line 66
+[29-May-2011 22:39:53] PHP Stack trace:
+[29-May-2011 22:39:53] PHP   1. {main}() /Users/kevin/Documents/dev/symfony/jobeet/symfony:0
+[29-May-2011 22:39:53] PHP   2. include() /Users/kevin/Documents/dev/symfony/jobeet/symfony:14
+[29-May-2011 22:39:53] PHP   3. sfSymfonyCommandApplication->run() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/cli.php:20
+[29-May-2011 22:39:53] PHP   4. sfTask->runFromCLI() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/command/sfSymfonyCommandApplication.class.php:76
+[29-May-2011 22:39:53] PHP   5. sfBaseTask->doRun() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfTask.class.php:97
+[29-May-2011 22:39:53] PHP   6. sfBaseTask->createConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:60
+[29-May-2011 22:39:53] PHP   7. sfProjectConfiguration::getApplicationConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/task/sfBaseTask.class.php:167
+[29-May-2011 22:39:53] PHP   8. sfApplicationConfiguration->__construct() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfProjectConfiguration.class.php:614
+[29-May-2011 22:39:53] PHP   9. sfApplicationConfiguration->initConfiguration() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:51
+[29-May-2011 22:39:53] PHP  10. sfConfigCache->checkConfig() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfApplicationConfiguration.class.php:122
+[29-May-2011 22:39:53] PHP  11. sfConfigCache->callHandler() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:197
+[29-May-2011 22:39:53] PHP  12. sfDefineEnvironmentConfigHandler->execute() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfConfigCache.class.php:108
+[29-May-2011 22:39:53] PHP  13. date() /Users/kevin/Documents/dev/symfony/jobeet/lib/vendor/symfony/lib/config/sfDefineEnvironmentConfigHandler.class.php:66
